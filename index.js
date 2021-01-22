@@ -13,7 +13,7 @@ function stringDecode(url) {
   const original = Buffer.from(str, 'base64').toString('ascii');
   return original;
 }
-const utilityOption = parseInt(readLineSync.question('Welcome to Base64 Encoder/Decoder. \nWhich utility function would you like to use?\n1. Base64 Encoder\n2. Base64 Decoder\n'));
+const utilityOption = parseInt(readLineSync.question('Welcome to Base64 Encoding/Decoding utility. \nWhich utility function would you like to use?\n1. Base64 Encoder\n2. Base64 Decoder\nEnter your choice:'));
 
 if(utilityOption===1){
     const stringToEncode = readLineSync.question('\nPlease enter the string to be encoded\n');
